@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sunshine_APP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="date">Today, May 17, 2015</string>
+    <string name="temp">90°F</string>
+    <string name="Refresh">Refresh</string>
+</resources>
