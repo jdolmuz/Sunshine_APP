@@ -5,4 +5,5 @@
     <string name="date">Today, May 17, 2015</string>
     <string name="temp">90°F</string>
     <string name="Refresh">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
 </resources>

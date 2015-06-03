@@ -1,5 +1,7 @@
 package com.dolmuz.jean.sunshine_app;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v4.app.Fragment;
@@ -12,8 +14,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -113,7 +117,29 @@ public class ForecastFragment extends Fragment {
         ListView forecastListView = (ListView) rootView.findViewById(R.id.list_view_Forecast);
         forecastListView.setAdapter(mforecastAdapter);
 
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view_Forecast);
+        listView.setAdapter(mforecastAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //get the forcast by calling the position and loading it into a toast
+                String forecast = mforecastAdapter.getItem(position);
+                //calling an explicit intent
+                Intent activityIntent = new Intent(getActivity(),DetailActivity.class).putExtra(Intent.EXTRA_TEXT,forecast);
 
+
+                startActivity(activityIntent);
+
+
+//                Toast.makeText(getActivity(),forecast,Toast.LENGTH_SHORT).show();
+//                Context context = getApplicationContext();
+//                CharSequence text = "You clicked the item in the " + position + " position.";
+//                int duration = Toast.LENGTH_SHORT;
+
+
+
+            }
+        });
 
         return rootView;
 
