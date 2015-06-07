@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_tempUnits_options">
+        <item>@string/pref_tempUnit_label_metric</item>
+        <item>@string/pref_tempUnit_label_imperial</item>
+    </string-array>
+
+    <string-array name="pref_tempUnits_values">
+        <item>@string/pref_tempUnit_metric</item>
+        <item>@string/pref_tempUnit_imperial</item>
+    </string-array>
+
+</resources>

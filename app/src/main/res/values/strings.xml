@@ -6,4 +6,13 @@
     <string name="temp">90°F</string>
     <string name="Refresh">Refresh</string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="pref_location_key">Location</string>
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_default" translatable="false">33025</string>
+    <string name="pref_tempUnit_key">units</string>
+    <string name="pref_tempUnit_label">Temperature Units</string>
+    <string name="pref_tempUnit_label_metric">Metric</string>
+    <string name="pref_tempUnit_label_imperial">Imperial</string>
+    <string name="pref_tempUnit_metric" translatable="false">metric</string>
+    <string name="pref_tempUnit_imperial" translatable="false">imperial</string>
 </resources>
